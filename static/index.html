@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Video Website</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    .background-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .content {
+        width: 363px;
+        border-radius: 25px;
+        padding: 33px;
+        background-color: #0006;
+        font-family: sans-serif;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-align: center;
+        z-index: 1;
+        border: 3px solid #ccc!important;
+    }
+
+    h1, p {
+      margin: 10px;
+    }
+
+    h1 {
+      font-size: 3em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    p {
+      font-size: 1.5em;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    }
+
+    input {
+        width: 233px;
+        padding: 14px;
+        margin-top: 20px;
+        font-size: 23px;
+        border: 1px solid #fff;
+        background-color: rgb(255 255 255);
+        color: #fff;
+        border-radius: 19px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    input:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      color: #000;
+    }
+
+    /* Add more styles as needed */
+
+  </style>
+</head>
+<body>
+  <div class="background-video">
+    <video autoplay loop muted playsinline>
+      <source src="https://r2---sn-jxou0gtapo3-gq0e.googlevideo.com/videoplayback?expire=1706002153&ei=iTKvZYySJd_62_gP8tGFEA&ip=34.174.174.75&id=o-AACpiRJBa2dLpkmw49sHvH1o9olUnf7mfV-6Copae84c&itag=22&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&spc=UWF9fynqQJuK5C7xUq5rKkOs4F__5td0NqpHmxmSOL8yXEo&vprv=1&svpuc=1&mime=video%2Fmp4&cnr=14&ratebypass=yes&dur=28800.058&lmt=1705629990178376&fexp=24007246&c=ANDROID&txp=5432434&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Ccnr%2Cratebypass%2Cdur%2Clmt&sig=AJfQdSswRAIgQxQNhIhBiWjYP6T7foGtPLX3mZ9WGuXCQ56CvZZ7kTACIEqDvSsz8c63sVvM7iryvlLCb3T8EDRzsH2Y005TUgaz&cms_redirect=yes&mh=jQ&mip=71.210.198.76&mm=31&mn=sn-jxou0gtapo3-gq0e&ms=au&mt=1705980293&mv=m&mvi=2&pl=18&lsparams=mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AAO5W4owRQIhANrT8VCs7wuK-IU-sEXKP7sFSnU_Y-K7Ucmi2i3H0iLjAiAE-SMoMIddIWD4SFpRCcBYQ-ba8WA2jS9dUfj_qkeFiA%3D%3D" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="content">
+    <!-- Your content goes here -->
+    <h1>SUPER TOKYO</h1>
+    <p>Welcome to the futuristic Tokyo!</p>
+
+    <form action="/service/route" method="POST" id="uform">
+        <input placeholder="Search the web freely" title="query" name="url" autocomplete="off" >
+    </form>
+
+    <script src="./index.js"></script>
+  </div>
+</body>
+</html>
